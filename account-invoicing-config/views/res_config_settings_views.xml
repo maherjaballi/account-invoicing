@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="res_config_settings_view_form" model="ir.ui.view">
+            <field name="name">res.config.settings.view.form.inherit.base.setup</field>
+            <field name="model">res.config.settings</field>
+            <field name="priority" eval="100"/>
+            <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[hasclass('settings')]" position="inside">
+                    <div class="app_settings_block" id="tools">
+                    <h2>Account Invoicing</h2>
+                     
+                        <div class="row mt16 o_settings_container">                         
+                            <div class="col-12 col-lg-3 o_setting_box">
+                              <div class="col-12 o_setting_box">  
+                              <div class="o_setting_left_pane">
+                                <field name="module_account_invoice_analytic_search" class="oe_inline" />
+                              </div>
+                              <div class="o_setting_right_pane">                                    
+                                    <label for="module_account_invoice_analytic_search"/> 
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                              </div>                            
+                            </div>
+                            <div class="col-12 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <field name="module_account_invoice_anglo_saxon_no_cogs_deferral" class="oe_inline" />
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label for="module_account_invoice_anglo_saxon_no_cogs_deferral" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div>
+                            </div>
+                            <div class="col-12 o_setting_box">                             
+                                <div class="o_setting_left_pane">
+                                    <field name="module_account_invoice_blocking" class="oe_inline" />
+                                </div>                                                                 
+                                <div class="o_setting_right_pane">                                    
+                                    <label for="module_account_invoice_blocking" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div>
+                            </div>
+                            <div class="col-12 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <field name="module_account_invoice_change_currency" class="oe_inline" />
+                                </div>                             
+                                <div class="o_setting_right_pane">                                    
+                                    <label for="module_account_invoice_change_currency" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div>
+                            </div>
+                            <div class="col-12 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                     <field name="module_account_invoice_check_total" class="oe_inline" />
+                                </div>
+                                <div class="o_setting_right_pane">                                   
+                                    <label for="module_account_invoice_check_total" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div>
+                            </div>
+
+                            <div class="col-12 o_setting_box">  
+                                <div class="o_setting_left_pane">
+                                    <field name="module_account_invoice_fiscal_position_update" class="oe_inline" />
+                                </div>                            
+                                <div class="o_setting_right_pane">                                    
+                                    <label for="module_account_invoice_fiscal_position_update" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div> 
+                            </div>
+                            <div class="col-12 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <field name="module_account_invoice_fixed_discount" class="oe_inline" />
+                                </div>                              
+                                <div class="o_setting_right_pane">                                    
+                                    <label for="module_account_invoice_fixed_discount" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div> 
+                            </div>
+                            <div class="col-12 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <field name="module_account_invoice_force_number" class="oe_inline" />
+                                </div>                              
+                                <div class="o_setting_right_pane">                                    
+                                    <label for="module_account_invoice_force_number" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 o_setting_box">
+                                <div class="col-12 o_setting_box">                           
+                                <div class="o_setting_left_pane">
+                                    <field name="module_account_invoice_line_description" class="oe_inline" />
+                                </div>
+                               
+                                <div class="o_setting_right_pane">                                    
+                                    <label for="module_account_invoice_line_description" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div> 
+                                </div>                        
+                                <div class="col-12 o_setting_box">    
+                                <div class="o_setting_left_pane">
+                                    <field name="module_account_invoice_line_sequence" class="oe_inline" />
+                                </div>                               
+                                 <div class="o_setting_right_pane">                                    
+                                    <label for="module_account_invoice_line_sequence" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div> 
+                                </div> 
+                                <div class="col-12 o_setting_box">                         
+                                <div class="o_setting_left_pane">
+                                     <field name="module_account_invoice_pricelist" class="oe_inline" />
+                                </div>
+                                <div class="o_setting_right_pane">                                   
+                                    <label for="module_account_invoice_pricelist" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div> 
+                                </div>   
+                                <div class="col-12 o_setting_box">                     
+                                <div class="o_setting_left_pane">
+                                    <field name="module_account_invoice_refund_link" class="oe_inline" />
+                                </div>
+                                <div class="o_setting_right_pane">                                    
+                                    <label for="module_account_invoice_refund_link" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div>
+                                </div>
+                                <div class="col-12 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <field name="module_account_invoice_reimbursable" class="oe_inline" />
+                                </div>                           
+                                <div class="o_setting_right_pane">                                    
+                                    <label for="module_account_invoice_reimbursable" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div>  
+                                </div>
+                                <div class="col-12 o_setting_box">                          
+                                <div class="o_setting_left_pane">
+                                    <field name="module_account_invoice_repair_link" class="oe_inline" />
+                                </div>    
+                                <div class="o_setting_right_pane">                                    
+                                    <label for="module_account_invoice_repair_link" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div>  
+                                </div>
+                                <div class="col-12 o_setting_box">                          
+                                <div class="o_setting_left_pane">
+                                    <field name="module_account_invoice_search_by_reference" class="oe_inline" />
+                                </div>                                
+                                <div class="o_setting_right_pane">                                    
+                                    <label for="module_account_invoice_search_by_reference" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div>
+                                </div>  
+
+                                <div class="col-12 o_setting_box">                          
+                                <div class="o_setting_left_pane">
+                                    <field name="module_account_invoice_supplier_ref_reuse" class="oe_inline" />
+                                </div>                                
+                                <div class="o_setting_right_pane">                                    
+                                    <label for="module_account_invoice_supplier_ref_reuse" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div>
+                                </div> 
+
+                                <div class="col-12 o_setting_box">                          
+                                <div class="o_setting_left_pane">
+                                    <field name="module_account_invoice_supplier_ref_unique" class="oe_inline" />
+                                </div>                                
+                                <div class="o_setting_right_pane">                                    
+                                    <label for="module_account_invoice_supplier_ref_unique" />
+                                    <div class="text-muted">
+                                         Install / Unistall Module 
+                                    </div>                               
+                                </div>
+                                </div>                          
+                                
+                             </div> 
+                             
+                                <div class="col-12 col-lg-3 o_setting_box">
+
+                                <div class="col-12 o_setting_box">                          
+                                    <div class="o_setting_left_pane">
+                                        <field name="module_account_invoice_supplierinfo_update" class="oe_inline" />
+                                    </div>                                
+                                    <div class="o_setting_right_pane">                                    
+                                        <label for="module_account_invoice_supplierinfo_update" />
+                                        <div class="text-muted">
+                                             Install / Unistall Module 
+                                        </div>                               
+                                    </div>
+                                </div>
+
+                                 <div class="col-12 o_setting_box">                          
+                                    <div class="o_setting_left_pane">
+                                        <field name="module_account_invoice_tax_note" class="oe_inline" />
+                                    </div>                                
+                                    <div class="o_setting_right_pane">                                    
+                                        <label for="module_account_invoice_tax_note" />
+                                        <div class="text-muted">
+                                             Install / Unistall Module 
+                                        </div>                               
+                                    </div>
+                                </div>   
+
+                                <div class="col-12 o_setting_box">                          
+                                    <div class="o_setting_left_pane">
+                                        <field name="module_account_invoice_tax_required" class="oe_inline" />
+                                    </div>                                
+                                    <div class="o_setting_right_pane">                                    
+                                        <label for="module_account_invoice_tax_required" />
+                                        <div class="text-muted">
+                                             Install / Unistall Module 
+                                        </div>                               
+                                    </div>
+                                </div>  
+
+                                <div class="col-12 o_setting_box">                          
+                                    <div class="o_setting_left_pane">
+                                        <field name="module_account_invoice_transmit_method" class="oe_inline" />
+                                    </div>                                
+                                    <div class="o_setting_right_pane">                                    
+                                        <label for="module_account_invoice_transmit_method" />
+                                        <div class="text-muted">
+                                             Install / Unistall Module 
+                                        </div>                               
+                                    </div>
+                                </div>  
+
+                                 <div class="col-12 o_setting_box">                          
+                                    <div class="o_setting_left_pane">
+                                        <field name="module_account_invoice_triple_discount" class="oe_inline" />
+                                    </div>                                
+                                    <div class="o_setting_right_pane">                                    
+                                        <label for="module_account_invoice_triple_discount" />
+                                        <div class="text-muted">
+                                             Install / Unistall Module 
+                                        </div>                               
+                                    </div>
+                                </div>  
+
+                                 <div class="col-12 o_setting_box">                          
+                                    <div class="o_setting_left_pane">
+                                        <field name="module_account_invoice_view_payment" class="oe_inline" />
+                                    </div>                                
+                                    <div class="o_setting_right_pane">                                    
+                                        <label for="module_account_invoice_view_payment" />
+                                        <div class="text-muted">
+                                             Install / Unistall Module 
+                                        </div>                               
+                                    </div>
+                                </div>
+                                <div class="col-12 o_setting_box">                          
+                                    <div class="o_setting_left_pane">
+                                        <field name="module_account_menu_invoice_refund" class="oe_inline" />
+                                    </div>                                
+                                    <div class="o_setting_right_pane">                                    
+                                        <label for="module_account_menu_invoice_refund" />
+                                        <div class="text-muted">
+                                             Install / Unistall Module 
+                                        </div>                               
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-lg-3 o_setting_box">
+
+                                 <div class="col-12 o_setting_box">                          
+                                    <div class="o_setting_left_pane">
+                                        <field name="module_account_payment_term_extension" class="oe_inline" />
+                                    </div>                                
+                                    <div class="o_setting_right_pane">                                    
+                                        <label for="module_account_payment_term_extension" />
+                                        <div class="text-muted">
+                                             Install / Unistall Module 
+                                        </div>                               
+                                    </div>
+                                </div>
+
+                                 <div class="col-12 o_setting_box">                          
+                                    <div class="o_setting_left_pane">
+                                        <field name="module_purchase_batch_invoicing" class="oe_inline" />
+                                    </div>                                
+                                    <div class="o_setting_right_pane">                                    
+                                        <label for="module_purchase_batch_invoicing" />
+                                        <div class="text-muted">
+                                             Install / Unistall Module 
+                                        </div>                               
+                                    </div>
+                                </div>
+
+                                 <div class="col-12 o_setting_box">                          
+                                    <div class="o_setting_left_pane">
+                                        <field name="module_purchase_stock_picking_return_invoicing" class="oe_inline" />
+                                    </div>                                
+                                    <div class="o_setting_right_pane">                                    
+                                        <label for="module_purchase_stock_picking_return_invoicing" />
+                                        <div class="text-muted">
+                                             Install / Unistall Module 
+                                        </div>                               
+                                    </div>
+                                </div>
+
+                                 <div class="col-12 o_setting_box">                          
+                                    <div class="o_setting_left_pane">
+                                        <field name="module_purchase_stock_picking_return_invoicing_force_invoiced" class="oe_inline" />
+                                    </div>                                
+                                    <div class="o_setting_right_pane">                                    
+                                        <label for="module_purchase_stock_picking_return_invoicing_force_invoiced" />
+                                        <div class="text-muted">
+                                             Install / Unistall Module 
+                                        </div>                               
+                                    </div>
+                                </div>
+
+                                <div class="col-12 o_setting_box">                          
+                                    <div class="o_setting_left_pane">
+                                        <field name="module_sale_invoice_line_note" class="oe_inline" />
+                                    </div>                                
+                                    <div class="o_setting_right_pane">                                    
+                                        <label for="module_sale_invoice_line_note" />
+                                        <div class="text-muted">
+                                             Install / Unistall Module 
+                                        </div>                               
+                                    </div>
+                                </div>
+
+                                 <div class="col-12 o_setting_box">                          
+                                    <div class="o_setting_left_pane">
+                                        <field name="module_sale_order_invoicing_queued" class="oe_inline" />
+                                    </div>                                
+                                    <div class="o_setting_right_pane">                                    
+                                        <label for="module_sale_order_invoicing_queued" />
+                                        <div class="text-muted">
+                                             Install / Unistall Module 
+                                        </div>                               
+                                    </div>
+                                </div>
+
+                                  <div class="col-12 o_setting_box">                          
+                                    <div class="o_setting_left_pane">
+                                        <field name="module_sale_timesheet_invoice_description" class="oe_inline" />
+                                    </div>                                
+                                    <div class="o_setting_right_pane">                                    
+                                        <label for="module_sale_timesheet_invoice_description" />
+                                        <div class="text-muted">
+                                             Install / Unistall Module 
+                                        </div>                               
+                                    </div>
+                                </div>
+                            
+
+                             </div>   
+
+                           </div> 
+                                                 
+                   </div>                  
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
+
+
+                
