@@ -5,22 +5,22 @@ from openerp import api, fields, models, _
 class ResConfigSettings(models.TransientModel):
     _inherit = 'res.config.settings'
     
-    module_account_invoice_analytic_search = fields.Boolean(string='account invoice analytic search',
+    module_account_invoice_analytic_search = fields.Boolean(string='Account Invoice Analytic Search',
         help='Organizations often require to quickly find the invoices associated to a \n'
               'project or to an analytic account, searching by its code or name. \n'
               'This module introduces the possibility search customer or supplier \n'
               'invoices by analytic account. \n'
              '-This installs the module account_invoice_analytic_search.')
     
-    module_account_invoice_anglo_saxon_no_cogs_deferral = fields.Boolean(string='account invoice anglosaxon no cogsdeferral',
+    module_account_invoice_anglo_saxon_no_cogs_deferral = fields.Boolean(string='Account Invoice Anglosaxon No Cogsdeferral',
         help='This module invalidates the COGS deferral introduced by the Anglo Saxon'
               'Accounting module. \n' )
 
-    module_account_invoice_blocking = fields.Boolean(string='account invoice blocking',
+    module_account_invoice_blocking = fields.Boolean(string='Account Invoice Blocking',
         help='This module allows the user to set a blocking (No Follow-up) flag directly on the invoice.'
               'This facilitates the blocking of the invoices move lines. \n' )
 
-    module_account_invoice_change_currency = fields.Boolean(string='account invoice change currency',
+    module_account_invoice_change_currency = fields.Boolean(string='Account Invoice Change Currency',
         help='This module allows users to update the currency of Invoices (in draft state) by \n'
               'a button Update Currency at the invoice form. \n'
               'After update to new currency, all the unit prices of invoice lines will be \n'
@@ -35,56 +35,56 @@ class ResConfigSettings(models.TransientModel):
              '-This installs the module account_invoice_change_currency.')
 
 
-    module_account_invoice_check_total = fields.Boolean(string='account invoice check total',
+    module_account_invoice_check_total = fields.Boolean(string='Account Invoice Check Total',
         help=' Add a Verification Total field on vendor bills. \n'
               'The user enters the taxes included invoice total as printed on the vendor bill, \n'
               'then enters the invoice lines and taxes. \n'
               'The system then checks the total computed by Odoo is the same as the verification total. \n'
              '-This installs the module account_invoice_check_total .')
 
-    module_account_invoice_fiscal_position_update = fields.Boolean(string='account invoice fiscal position update',
+    module_account_invoice_fiscal_position_update = fields.Boolean(string='Account Invoice Fiscal Position Update',
         help='With this module, when a user changes the fiscal position of an invoice, the \n'
               'taxes and the accounts on all the invoice lines which have a product are \n'
               'automatically updated. The invoice lines without a product are not updated and \n'
               'a warning is displayed to the user in this case. \n'
             '-This installs the module account_invoice_fiscal_position_update .')
 
-    module_account_invoice_fixed_discount = fields.Boolean(string='account invoice fixed discount',
+    module_account_invoice_fixed_discount = fields.Boolean(string='Account Invoice Fixed Discount',
         help='This module extends the functionality of Invoicing to allow you to apply fixed \n'
               'amount discounts at invoice line level. \n'
               'The module also extends the invoice report to show fixed discount. \n'  
               '-This installs the module account_invoice_fixed_discount .')
 
-    module_account_invoice_force_number = fields.Boolean(string='account_invoice_force_number',
+    module_account_invoice_force_number = fields.Boolean(string='Account Invoice Force Number',
         help='This module allows to force the invoice numbering. It displays the move_name field. \n'
              'If user fills that field, the typed value will be used as invoice (and move) number. \n' 
              'Otherwise, the next sequence number will be retrieved and saved.  \n'
              'So, the new field has to be used when user doesnt want to use the default invoice numbering for a specific invoice. \n'
              '-This installs the module account_invoice_force_number .')
 
-    module_account_invoice_line_description = fields.Boolean(string='account invoice-line description',
+    module_account_invoice_line_description = fields.Boolean(string='Account Invoice-line Description',
         help='This module allows to use only the sale description or the purchase description \n'
               'on the invoice lines depending on the invoice type. \n'
              '-This installs the module account_invoice_line_description .')
 
-    module_account_invoice_line_sequence = fields.Boolean(string='account_invoice_line_sequence',
+    module_account_invoice_line_sequence = fields.Boolean(string='Account Invoice_line_Sequence',
         help='Provides a new sequence field on invoice lines which helps to manage the order of the invoice lines. \n'
              '-This installs the module account_invoice_line_sequence .')
 
-    module_account_invoice_pricelist = fields.Boolean(string='account_invoice_pricelist',
+    module_account_invoice_pricelist = fields.Boolean(string='Account Invoice Pricelist',
         help='* Add a stored field pricelist on invoices, related to the partner pricelist; \n'
               '* Use this pricelist when manually adding invoice lines \n'
               '* Possibility to group by pricelist on account.invoice view; \n'
              '-This installs the module account_invoice_pricelist .')
 
 
-    module_account_invoice_refund_link = fields.Boolean(string='account invoice refund-link',
+    module_account_invoice_refund_link = fields.Boolean(string='Account Invoice Refund-Link',
         help='This module creates in the invoice form a new Refunds page when the invoice \n'
               'has some refunds. It shows a line for each refund invoice with main \n'
               'information. \n'
              '-This installs the module account_invoice_refund_link .')
 
-    module_account_invoice_reimbursable = fields.Boolean(string='account invoice reimbursable',
+    module_account_invoice_reimbursable = fields.Boolean(string='Account Invoice Reimbursable',
         help='This module adds the option to add reimbursables to supplier invoices. \n'
               'Reimbursables are payments for services that your supplier has made on behalf'
               'of your company as part of an agreement. \n'
@@ -99,20 +99,20 @@ class ResConfigSettings(models.TransientModel):
               'already been paid by your lawyer. \n'
              '-This installs the module account_invoice_reimbursable .')
 
-    module_account_invoice_repair_link = fields.Boolean(string='account_invoice_repair_link',
+    module_account_invoice_repair_link = fields.Boolean(string='Account Invoice Repair Link',
         help='This module adds a link between invoices and repair orders. Invoices are generated from'
               'the repair orders. With this module you can navigate back to the repair orders that'
               'generated a specific invoice. \n'
               'This module is useful if you want to add information from the repair in the invoice report. \n'
              '-This installs the module account_invoice_repair_link .')
 
-    module_account_invoice_search_by_reference = fields.Boolean(string='account invoice search by reference',
+    module_account_invoice_search_by_reference = fields.Boolean(string='Account Invoice Search By Reference',
         help='This module adds the ability of searching by vendor reference when searching'
               'invoices from different views. This is useful for example, when receiving'
               'supplier RMAs, where the user can search only by the internal invoice number. \n'
               '-This installs the module account_invoice_search_by_reference .')
 
-    module_account_invoice_supplier_ref_reuse = fields.Boolean(string='account invoice supplier refreuse',
+    module_account_invoice_supplier_ref_reuse = fields.Boolean(string='Account Invoice Supplier Refreuse',
         help='In some cases, having more than one supplier invoice with the same'
               'reference is possible. For instance, in Switzerland, BVR/ESR numbers'
               'are used as a type of reference. Generally, this number is unique and'
@@ -120,7 +120,7 @@ class ResConfigSettings(models.TransientModel):
               'reference for several invoices (usually for recurring invoices). \n'
              '-This installs the module account_invoice_supplier_ref_reuse .')
 
-    module_account_invoice_supplier_ref_unique = fields.Boolean(string='account invoice supplier ref-unique',
+    module_account_invoice_supplier_ref_unique = fields.Boolean(string='Account Invoice Supplier Ref-Unique',
         help='This module checks that a supplier invoice/refund is not entered twice. \n'
                'This is important because if you enter twice the same supplier invoice,' 
                'there is also a risk that you pay it twice ! \n'
@@ -128,14 +128,14 @@ class ResConfigSettings(models.TransientModel):
               'without considering the case of the supplier invoice number. \n'
              '-This installs the module account_invoice_supplier_ref_unique .')
 
-    module_account_invoice_supplierinfo_update = fields.Boolean(string='account invoice supplierinfo update',
+    module_account_invoice_supplierinfo_update = fields.Boolean(string='Account Invoice Supplierinfo Update',
         help='This module allows to automatically update all products information in vendor bill for '
               'which the purchase information on the line are different from the supplier information defined in the product form. \n'
               'It creates a new supplier information line if there is not any or it updates the first one in the list. \n'
              '-This installs the module account_invoice_supplierinfo_update .')
 
 
-    module_account_invoice_tax_note = fields.Boolean(string='account invoice tax-note',
+    module_account_invoice_tax_note = fields.Boolean(string='Account Invoice Tax-Note',
         help='In some situations, a mention must be displayed on invoices when a specific tax is used. \n'
             'This module lets you define such a mention on Tax Groups. \n'
             'This mechanism complements the invoice note coming from the fiscal position. \n'
@@ -143,12 +143,12 @@ class ResConfigSettings(models.TransientModel):
             'To contribute to this module, please visit https://odoo-community.org. \n'
              '-This installs the module account_invoice_tax_note .')
 
-    module_account_invoice_tax_required = fields.Boolean(string='account invoice tax-required',
+    module_account_invoice_tax_required = fields.Boolean(string='Account Invoice Tax-Required',
         help='This module adds functional a check on invoice'
               'to force user to set tax on invoice line. \n'
              '-This installs the module account_invoice_tax_required .')
 
-    module_account_invoice_transmit_method = fields.Boolean(string='account invoice transmit-method',
+    module_account_invoice_transmit_method = fields.Boolean(string='Account Invoice Transmit-Method',
         help= 'This module allows to configure an *Invoice Transmit Method* on each partner.'
                ' This module provides by default 3 transmission methods: \n'
               '* E-mail \n'
@@ -160,10 +160,10 @@ class ResConfigSettings(models.TransientModel):
               'which is the e-invoicing plateform of the French  administration). \n'
              '-This installs the module account_invoice_transmit_method .')
 
-    module_account_invoice_triple_discount = fields.Boolean(string='account invoice triple discount',
+    module_account_invoice_triple_discount = fields.Boolean(string='Account Invoice Triple Discount',
         help='This module allows to have three successive discounts on each invoice line. \n')
 
-    module_account_invoice_view_payment = fields.Boolean(string='account invoice view-payment',
+    module_account_invoice_view_payment = fields.Boolean(string='Account Invoice View Payment',
         help='This module allows users to access directly to the payment from an invoice \n'
               'when registering a payment or afterwards. \n'
 
@@ -173,14 +173,14 @@ class ResConfigSettings(models.TransientModel):
              '-This installs the module account_invoice_view_payment .')
 
    
-    module_account_menu_invoice_refund = fields.Boolean(string='account menu invoice refund',
+    module_account_menu_invoice_refund = fields.Boolean(string='Account Menu Invoice Refund',
         help='This module add 2 new menus, \n'
               '1. Invoicing > Customers > Invoices / Credit Notes \n'
               '2. Invoicing > Vendors > Bills / Refunds \n'
               'Additionally it allow register net payment by selecting both invoice and refund. \n'
              '-This installs the module account_menu_invoice_refund .')
 
-    module_account_payment_term_extension = fields.Boolean(string='account payment term extension',
+    module_account_payment_term_extension = fields.Boolean(string='Account Payment Term Extension',
         help='This module extends the functionality of payment terms to : \n'
             '* support rounding, months and weeks on payment term lines \n'
             '* allow to set more than one day of payment in payment terms \n'
@@ -194,13 +194,13 @@ class ResConfigSettings(models.TransientModel):
                 '  the due date of the first line \n'
              '-This installs the module account_payment_term_extension .')
 
-    module_purchase_batch_invoicing = fields.Boolean(string='purchase_batch_invoicing',
+    module_purchase_batch_invoicing = fields.Boolean(string='Purchase Batch Invoicing',
         help='This module extends the functionality of purchases to support batch invoicing \n'
               'purchase orders and to allow you to choose if you want them grouped by purchase \n'
               'order or by vendor. \n'
              '-This installs the module purchase_batch_invoicing .')
 
-    module_purchase_stock_picking_return_invoicing = fields.Boolean(string='purchase stock picking return invoicing',
+    module_purchase_stock_picking_return_invoicing = fields.Boolean(string='Purchase Stock Picking Return Invoicing',
         help='This module extends the functionality of purchase orders to better manage \n'
               'supplier returns and refunds. \n'
 
@@ -214,7 +214,7 @@ class ResConfigSettings(models.TransientModel):
               'the correct quantity will be proposed, based on those fields. \n'
              '-This installs the module purchase_stock_picking_return_invoicing .')
 
-    module_purchase_stock_picking_return_invoicing_force_invoiced = fields.Boolean(string='purchase stock picking return invoicing force-invoiced',
+    module_purchase_stock_picking_return_invoicing_force_invoiced = fields.Boolean(string='Purchase Stock Picking Return Invoicing Force-Invoiced',
         help='This module forces the status of the purchase order to remain in Invoiced \n'
                 'even when you have returned items into stock, if you indicated in the purchase \n'
                 'order that you wanted to force the invoiced status. \n'
@@ -223,13 +223,13 @@ class ResConfigSettings(models.TransientModel):
                 'Purchase Stock Picking Return Invoicing. \n'
              '-This installs the module purchase_stock_picking_return_invoicing_force_invoiced .')
 
-    module_sale_invoice_line_note = fields.Boolean(string='sale invoice line note',
+    module_sale_invoice_line_note = fields.Boolean(string='Sale Invoice Line Note',
         help='This module adds a checkbox Copy notes to invoice in the create invoice \n'
               'wizard from the sale order, to propagate sale order line of Note type to the \n'
               'created invoice. \n'
              '-This installs the module sale_invoice_line_note .')
 
-    module_sale_order_invoicing_queued = fields.Boolean(string='sale order invoicing queued',
+    module_sale_order_invoicing_queued = fields.Boolean(string='Sale Order Invoicing Queued',
         help='This module allows to enqueue in several jobs the sales orders invoicing \n'
               'process to be executed in paralell on background, which is normally done \n'
               'serially and on foreground. \n'
@@ -238,7 +238,7 @@ class ResConfigSettings(models.TransientModel):
               'order invoicing address and order currency. \n'
              '-This installs the module sale_order_invoicing_queued .')
 
-    module_sale_timesheet_invoice_description = fields.Boolean(string='sale timesheet invoice description',
+    module_sale_timesheet_invoice_description = fields.Boolean(string='Sale Timesheet Invoice Description',
         help='Add timesheet details in invoice line to invoices related with timesheets. \n'
              '-This installs the module sale_timesheet_invoice_description .')
 
