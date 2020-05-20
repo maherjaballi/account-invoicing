@@ -10,9 +10,7 @@ FROM debian:stretch-slim
 #COPY ./odoo.conf /etc/odoo/
 
 # Mount /var/lib/odoo to allow restoring filestore and /extra-addons for users addons
-RUN chown odoo /etc/odoo/odoo.conf \
-    && mkdir -p /extra-addons \
-    && chown -R odoo /extra-addons
+
 VOLUME ["/var/lib/odoo", "/extra-addons"]
 
 
