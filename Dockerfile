@@ -3,7 +3,7 @@ FROM debian:stretch-slim
 #docker run -d -e POSTGRES_USER=odoo -e POSTGRES_PASSWORD=odoo -e POSTGRES_DB=postgres --name db postgres:10
 
 # Required for starting application up.
-RUN apk update && apk add /bin/bash
+#RUN apk update && apk add /bin/bash
 
 # Copy entrypoint script and Odoo configuration file
 COPY ./entrypoint.sh /
