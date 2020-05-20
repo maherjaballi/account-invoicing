@@ -7,7 +7,7 @@ FROM debian:stretch-slim
 
 # Copy entrypoint script and Odoo configuration file
 #COPY ./entrypoint.sh /
-COPY ./odoo.conf /etc/odoo/
+#COPY ./odoo.conf /etc/odoo/
 
 # Mount /var/lib/odoo to allow restoring filestore and /extra-addons for users addons
 RUN chown odoo /etc/odoo/odoo.conf \
